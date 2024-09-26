@@ -1,5 +1,6 @@
 import { TextField } from "@mui/material";
 import { styled } from "@mui/material/styles";
+import PropTypes from "prop-types";
 
 /**** Define custom styles ****/
 const StyledTextField = styled(TextField)(() => ({
@@ -70,6 +71,20 @@ const InputField = ({
       />
     </div>
   );
+};
+
+InputField.propTypes = {
+  label: PropTypes.string,             
+  registerName: PropTypes.string, 
+  register: PropTypes.func,     
+  type: PropTypes.string,
+  errors: PropTypes.object,
+  required: PropTypes.bool,
+  defaultValue: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]),
+  placeholder: PropTypes.string,
 };
 
 export default InputField;
