@@ -27,7 +27,7 @@ const AddBulkVideoTemplateForm = () => {
   
   
   
-
+// Handle video Template upload function
   const handleVideoTemplateUpload = async () => {
     if (tagErrorMessage) {
       return window.alert(tagErrorMessage);
