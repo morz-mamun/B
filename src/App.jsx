@@ -1,5 +1,5 @@
 
-import BulkFileForm from './Components/BulkForm/BulkForm'
+import BulkFileForm from './Components/BulkForm-RHF/BulkForm'
 
 function App() {
  
