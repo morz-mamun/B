@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { changeAutoComplete, deleteFiledHandler, handleBulkUploadVideoFile, handleChange, handleTagChange, videoFileType, videoTemplateApplicationSupportedConstant, videoTemplateSubCategoryConstant } from "../Function/BulkFormFunction";
+import { changeAutoComplete, handleBulkUploadVideoFile, handleChange, handleTagChange, videoFileType, videoTemplateApplicationSupportedConstant, videoTemplateSubCategoryConstant } from "../Function/BulkFormFunction";
 import { FaUpload } from "react-icons/fa";
 import { errorSpanClass, FormRegex } from "../Regex/regex";
 import { MdDeleteForever } from "react-icons/md";
@@ -10,6 +10,7 @@ import VidoeUploadFileInBulk from "../BulkInputField/VidoeUploadFileInBulk";
 import BulkUploadDescriptionInputField from "../BulkInputField/BuklUploadDesriptionInputField";
 import { CgSpinner } from "react-icons/cg";
 import { handleBulkUpload } from "./Utils/Functions/handleBulkUpload";
+import { handleFileDelete } from "./Utils/Functions/handleFileDelete";
 
 // component start -> 
 const AddBulkVideoTemplateForm = () => {
@@ -148,7 +149,7 @@ const AddBulkVideoTemplateForm = () => {
                 <button
                   className="w-12 h-12 border rounded-xl bg-red-500 text-white"
                   onClick={() =>
-                    deleteFiledHandler(
+                    handleFileDelete(
                       index,
                       files,
                       setFiles,
