@@ -9,9 +9,9 @@ import BulkTagInputFiled from "../BulkInputField/BulkTagInputFiled";
 import VidoeUploadFileInBulk from "../BulkInputField/VidoeUploadFileInBulk";
 import BulkUploadDescriptionInputField from "../BulkInputField/BuklUploadDesriptionInputField";
 import { CgSpinner } from "react-icons/cg";
-import { handleBulkUpload } from "./Utils/Functions/handleBulkUpload";
-import { handleFileDelete } from "./Utils/Functions/handleFileDelete";
-import { handleChange } from "./Utils/Functions/handleChange";
+import { handleBulkUpload } from "../../Utils/Functions/handleBulkUpload";
+import { handleFileDelete } from "../../Utils/Functions/handleFileDelete";
+import { handleChange } from "../../Utils/Functions/handleChange";
 
 // component start -> 
 const AddBulkVideoTemplateForm = () => {
