@@ -9,6 +9,7 @@ import BulkTagInputFiled from "../BulkInputField/BulkTagInputFiled";
 import VidoeUploadFileInBulk from "../BulkInputField/VidoeUploadFileInBulk";
 import BulkUploadDescriptionInputField from "../BulkInputField/BuklUploadDesriptionInputField";
 import { CgSpinner } from "react-icons/cg";
+import { handleBulkUpload } from "./Utils/Functions/handleBulkUpload";
 
 // component start -> 
 const AddBulkVideoTemplateForm = () => {
@@ -23,10 +24,9 @@ const AddBulkVideoTemplateForm = () => {
   const [subCategory] = useState([]);
   const [tagErrorMessage, setTagErrorMessage] = useState("");
   const [applicationSupportedErrorMessage] = useState("");
-
-  const handleBulkUpload = async () => {
-    fileInputRef.current.click();
-  };
+  
+  
+  
 
   const handleVideoTemplateUpload = async () => {
     if (tagErrorMessage) {
@@ -86,7 +86,7 @@ const AddBulkVideoTemplateForm = () => {
         <div className=" flex justify-center items-center w-full">
           {!formData.length && (
             <button
-              onClick={() => handleBulkUpload()}
+              onClick={() => handleBulkUpload(fileInputRef)}
               className="w-60 h-48 border rounded-2xl flex flex-col gap-2 justify-center items-center text-5xl text-[#ff0000] mt-20"
             >
               <FaUpload />
