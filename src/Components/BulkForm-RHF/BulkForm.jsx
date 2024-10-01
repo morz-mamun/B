@@ -211,16 +211,7 @@ const BulkFileForm = () => {
           ))}
 
           {/* submit button */}
-          {files.length > 0 && (
-            <div className="flex mx-auto items-center justify-center mt-5">
-              <button
-                type="submit"
-                className="inline-flex items-center justify-center w-32 h-10 bg-[#ff0000] hover:bg-white text-xs md:text-[12px] border-[1px] border-[#ff0000] lg:text-[15px] font-medium tracking-wide text-white hover:text-[#ff0000] transition duration-300 rounded-lg hover-visible:outline-none whitespace-nowrap hover:shadow-2xl uppercase hover:cursor-pointer"
-              >
-                Create
-              </button>
-            </div>
-          )}
+          
         </form>
       </div>
     </div>
